@@ -2,7 +2,6 @@ const prompt = require("prompt-sync")();
 
 
 
-function functionTasks() {
 	var num = prompt("Welcome to your task manager, \
 	Press: 1. to see all your tasks \
 	2. to add a task \
@@ -15,7 +14,7 @@ function functionTasks() {
 		if (num === "1") {
 			if (nbrTask = 0) {
 				const noTask = prompt("No task. Do you want to add a task ? tape Y or N");
-				if (noTask = "Y") {
+				if (noTask === "Y") {
 					const tasks = prompt("What is your task ?");
 					tab.push(tasks)
 					console.log(tasks)
@@ -52,7 +51,7 @@ function functionTasks() {
 			console.log("Sorry cette commande n'existe pas")
 		}
 
-}
+
 
 // else if (num == 2) {
 // 	let newTask = prompt("Enter a new task to do :");
